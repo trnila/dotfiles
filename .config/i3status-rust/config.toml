@@ -1,0 +1,46 @@
+
+#theme = "solarized-dark"
+theme = "semi-native"
+icons = "awesome"
+
+[[block]]
+block = "bluetooth"
+mac = "11:11:22:34:FB:B9"
+format = "HiVE {percentage}"
+
+[[block]]
+block = "net"
+
+[[block]]
+block = "battery"
+interval = 60
+format = "{percentage} {time}"
+
+[[block]]
+block = "disk_space"
+path = "/"
+unit = "GB"
+interval = 30
+warning = 5.0
+alert = 1.0
+
+[[block]]
+block = "memory"
+clickable = false
+display_type = "memory"
+format_mem = "{mem_used} {mem_used_percents}"
+#format_swap = "{SUp}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%e.%-m %R"
