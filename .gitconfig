@@ -1,0 +1,25 @@
+[push]
+	default = simple
+[user]
+	name = Daniel Trnka
+	email = daniel.trnka@gmail.com
+[core]
+	autocrlf = input
+	filemode = false
+	excludesfile = ~/.gitignore.all
+	quotepath = false
+	commitGraph = true
+[fetch]
+	recurseSubmodules = false
+[pull]
+	rebase = true
+[help]
+	autocorrect = 1
+[commit]
+	verbose = true
+[credential]
+	helper = cache
+[color]
+	ui = auto
+[gc]
+	writeCommitGraph = true
