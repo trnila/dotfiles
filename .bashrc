@@ -23,6 +23,7 @@ PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 alias ls='ls --color=auto'
 alias cwd='pwd | tr -d "\r\n" | xclip -selection clipboard'
 alias pikaur='pikaur --noedit --noconfirm'
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 forward() {
 	ssh -NfL $2:localhost:$2 $1
