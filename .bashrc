@@ -25,6 +25,8 @@ alias cwd='pwd | tr -d "\r\n" | xclip -selection clipboard'
 alias pikaur='pikaur --noedit --noconfirm'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 forward() {
 	ssh -NfL $2:localhost:$2 $1
 }
